@@ -45,6 +45,11 @@ function Pokecard(props) {
 
     const [pokemonDetails, setPokemonDetails] = useState(null)
 
+    //Encontrar os dados do pokemon json para mockar através do console.log, colar a url da api do pokemon ex "https://pokeapi.co/api/v2/pokemon/18/" colar o endereço no navegador, copiar todo o conteudo e colar no arquivos js criado no projeto dentro do arquivo teste (pokecarMock.js) e criar um expor const "nome" = colar os dados copiados da url e salvar.
+    // console.log('props', props)
+    // console.log('url', url)
+    // console.log("openModal", openModal)
+    
     useEffect(() => {
         axios.get(url).then((response) => {
             setPokemonDetails(response.data)
