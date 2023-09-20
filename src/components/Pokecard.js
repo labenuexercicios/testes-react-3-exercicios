@@ -63,9 +63,9 @@ function Pokecard(props) {
     return (
         <Container firstType={pokemonTypes[0]} onClick={() => openModal(pokemonDetails)}>
             <Name>{pokemonName}</Name>
-            
+
             <Image src={imageUrl} alt={pokemonName} />
-            
+
             <Types>
                 {pokemonTypes.map((type) => (
                     <TypeText key={pokemonNumber + type} type={type}>
