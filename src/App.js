@@ -23,7 +23,7 @@ const AppWrapper = styled.main`
 
 function App() {
     const [activeModal, setActiveModal] = useState(null)
-
+    
     const openModal = (allPokemonDetails) => {
         setActiveModal(allPokemonDetails)
     }
